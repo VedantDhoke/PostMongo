@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 client = MongoClient('mongodb://127.0.0.1:27017/')
 db = client['pracs']
-notes_collection = db['pracs']
+notes_collection = db['pracs_collection']
 
 @app.route('/getNotes', methods=['GET'])
 def getNotes():
